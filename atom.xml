@@ -6,7 +6,7 @@
   <link href="/DeveloperGuide.github.io/atom.xml" rel="self"/>
   
   <link href="https://zou-scott-developer.github.io/"/>
-  <updated>2020-05-01T07:47:37.059Z</updated>
+  <updated>2020-05-05T04:51:58.988Z</updated>
   <id>https://zou-scott-developer.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>config</title>
+    <link href="https://zou-scott-developer.github.io/2020/05/05/config/"/>
+    <id>https://zou-scott-developer.github.io/2020/05/05/config/</id>
+    <published>2020-05-05T04:51:41.405Z</published>
+    <updated>2020-05-05T04:51:58.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hexo-Configuration&quot;&gt;&lt;a href=&quot;#Hexo-Configuration&quot; class=&quot;headerlink&quot; title=&quot;Hexo Configuration&quot;&gt;&lt;/a&gt;Hexo Configuration&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>scott-article-title</title>
