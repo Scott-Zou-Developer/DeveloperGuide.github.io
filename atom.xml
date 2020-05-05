@@ -6,7 +6,7 @@
   <link href="/DeveloperGuide.github.io/atom.xml" rel="self"/>
   
   <link href="https://zou-scott-developer.github.io/"/>
-  <updated>2020-04-29T14:18:59.042Z</updated>
+  <updated>2020-05-01T07:47:37.059Z</updated>
   <id>https://zou-scott-developer.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scott-article-title</title>
+    <link href="https://zou-scott-developer.github.io/2020/05/05/scott-article-title/"/>
+    <id>https://zou-scott-developer.github.io/2020/05/05/scott-article-title/</id>
+    <published>2020-05-05T04:47:56.253Z</published>
+    <updated>2020-05-01T07:47:37.059Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;@&lt;a href=&quot;这里写自定义目录标题&quot;&gt;TOC&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;欢迎使用Markdown编辑器&quot;&gt;&lt;a href=&quot;#欢迎使用Markdown编辑器&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
