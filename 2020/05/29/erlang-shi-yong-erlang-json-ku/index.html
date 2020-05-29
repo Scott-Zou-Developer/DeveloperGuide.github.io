@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Scott&#39;s Blog">
+    <meta name="keywords" content="Erlang：使用Erlang Json库, Scott&#39;s Blog">
     <meta name="description" content="哈尔滨工程大学 | 控制工程 | 大数据">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Scott&#39;s Blog</title>
+    <title>Erlang：使用Erlang Json库 | Scott&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/DeveloperGuide.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/DeveloperGuide.github.io/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/DeveloperGuide.github.io/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/DeveloperGuide.github.io/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Erlang：使用Erlang Json库</h1>
                 </div>
             </div>
         </div>
@@ -443,21 +443,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-05-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-05-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    125
+                    200
                 </div>
                 
 
@@ -479,19 +479,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="Erlang：使用Erlang-Json库"><a href="#Erlang：使用Erlang-Json库" class="headerlink" title="Erlang：使用Erlang Json库"></a>Erlang：使用Erlang Json库</h2><h3 id="1-下载Erlang的Json库"><a href="#1-下载Erlang的Json库" class="headerlink" title="1.下载Erlang的Json库"></a>1.下载Erlang的Json库</h3><p>官网地址：<a href="http://www.lshift.net/blog/2007/02/17/json-and-json-rpc-for-erlang/" target="_blank" rel="noopener">http://www.lshift.net/blog/2007/02/17/json-and-json-rpc-for-erlang/</a></p>
+<p>GitHub地址：<a href="https://github.com/tonyg/erlang-rfc4627/" target="_blank" rel="noopener">https://github.com/tonyg/erlang-rfc4627/</a></p>
+<p>Linux文件：erlang-rfc4627</p>
+<h3 id="2-编译JSON库到Erlang中"><a href="#2-编译JSON库到Erlang中" class="headerlink" title="2.编译JSON库到Erlang中"></a>2.编译JSON库到Erlang中</h3><p>2.1 从GitHub下载源码</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/tonyg/erlang-rfc4627.git</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>将文件erlang-rfc4627/复制粘贴到Erlang的安装目录lib下</p>
+<p>默认Erlang安装的lib目录是：/usr/local/lib/erlang/lib</p>
+<p>2.2 编译</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd erlang-rfc4627</span><br><span class="line">make</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>会在 /ebin/目录下生成.beam</p>
+<h3 id="3-在Erlang中使用JSON库"><a href="#3-在Erlang中使用JSON库" class="headerlink" title="3.在Erlang中使用JSON库"></a>3.在Erlang中使用JSON库</h3><p>3.1 list转换为Json</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">O = rfc4627:encode({obj, [{name, tom}, {age, <span class="number">12</span>}]}).</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>3.2 Json装换为list</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rfc4627:decode(O).</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>3.3 运行结果</p>
+<p><img src="https://gitee.com/Scott_Zou_Developer/PictureLibrary/raw/master/Typora/Blog/Erlang_Json.png" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -535,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zou-scott-developer.github.io/DeveloperGuide.github.io/2020/04/29/hello-world/">https://zou-scott-developer.github.io/DeveloperGuide.github.io/2020/04/29/hello-world/</a>
+                    <a href="https://zou-scott-developer.github.io/DeveloperGuide.github.io/2020/05/29/erlang-shi-yong-erlang-json-ku/">https://zou-scott-developer.github.io/DeveloperGuide.github.io/2020/05/29/erlang-shi-yong-erlang-json-ku/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -738,67 +745,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/DeveloperGuide.github.io/2020/05/05/scott-article-title/">
+                <a href="/DeveloperGuide.github.io/2020/05/29/erlang-shi-yong-erlang-json-ku/">
                     <div class="card-image">
                         
                         
-                        <img src="/DeveloperGuide.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="scott-article-title">
+                        <img src="/DeveloperGuide.github.io/medias/featureimages/14.jpg" class="responsive-img" alt="Erlang：使用Erlang Json库">
                         
-                        <span class="card-title">scott-article-title</span>
+                        <span class="card-title">Erlang：使用Erlang Json库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            @TOC
-欢迎使用Markdown编辑器你好！ 这是你第一次使用 Markdown编辑器 所展示的欢迎页。如果你想学习如何使用Markdown编辑器, 可以仔细阅读这篇文章，了解一下Markdown的基本语法知识。
-新的改变我们对Markd
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-05
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Scott Zou
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/DeveloperGuide.github.io/2020/04/29/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/DeveloperGuide.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            Erlang：使用Erlang Json库1.下载Erlang的Json库官网地址：http://www.lshift.net/blog/2007/02/17/json-and-json-rpc-for-erlang/
+GitHub地址：h
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-29
                             </span>
                         <span class="publish-author">
                             
@@ -809,6 +779,43 @@
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/DeveloperGuide.github.io/2020/05/05/config/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/DeveloperGuide.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="config">
+                        
+                        <span class="card-title">config</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Hexo ConfigurationDocs: https://hexo.io/docs/configuration.htmlSource: https://github.com/hexojs/hexo/Sitetitle: Scott’s
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Scott Zou
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>

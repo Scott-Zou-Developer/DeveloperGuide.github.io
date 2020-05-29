@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Erlang：使用Erlang Json库</title>
+      <link href="/DeveloperGuide.github.io/2020/05/29/erlang-shi-yong-erlang-json-ku/"/>
+      <url>/DeveloperGuide.github.io/2020/05/29/erlang-shi-yong-erlang-json-ku/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Erlang：使用Erlang-Json库"><a href="#Erlang：使用Erlang-Json库" class="headerlink" title="Erlang：使用Erlang Json库"></a>Erlang：使用Erlang Json库</h2><h3 id="1-下载Erlang的Json库"><a href="#1-下载Erlang的Json库" class="headerlink" title="1.下载Erlang的Json库"></a>1.下载Erlang的Json库</h3><p>官网地址：<a href="http://www.lshift.net/blog/2007/02/17/json-and-json-rpc-for-erlang/" target="_blank" rel="noopener">http://www.lshift.net/blog/2007/02/17/json-and-json-rpc-for-erlang/</a></p><p>GitHub地址：<a href="https://github.com/tonyg/erlang-rfc4627/" target="_blank" rel="noopener">https://github.com/tonyg/erlang-rfc4627/</a></p><p>Linux文件：erlang-rfc4627</p><h3 id="2-编译JSON库到Erlang中"><a href="#2-编译JSON库到Erlang中" class="headerlink" title="2.编译JSON库到Erlang中"></a>2.编译JSON库到Erlang中</h3><p>2.1 从GitHub下载源码</p><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/tonyg/erlang-rfc4627.git</span><br></pre></td></tr></tbody></table></figure><p>将文件erlang-rfc4627/复制粘贴到Erlang的安装目录lib下</p><p>默认Erlang安装的lib目录是：/usr/local/lib/erlang/lib</p><p>2.2 编译</p><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd erlang-rfc4627</span><br><span class="line">make</span><br></pre></td></tr></tbody></table></figure><p>会在 /ebin/目录下生成.beam</p><h3 id="3-在Erlang中使用JSON库"><a href="#3-在Erlang中使用JSON库" class="headerlink" title="3.在Erlang中使用JSON库"></a>3.在Erlang中使用JSON库</h3><p>3.1 list转换为Json</p><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">O = rfc4627:encode({obj, [{name, tom}, {age, <span class="number">12</span>}]}).</span><br></pre></td></tr></tbody></table></figure><p>3.2 Json装换为list</p><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rfc4627:decode(O).</span><br></pre></td></tr></tbody></table></figure><p>3.3 运行结果</p><p><img src="https://gitee.com/Scott_Zou_Developer/PictureLibrary/raw/master/Typora/Blog/Erlang_Json.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>config</title>
       <link href="/DeveloperGuide.github.io/2020/05/05/config/"/>
       <url>/DeveloperGuide.github.io/2020/05/05/config/</url>
